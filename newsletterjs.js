@@ -13,7 +13,8 @@ function validation(){
 
     if(mailV.length <6 ){
         errormsgV.innerHTML = msgV[1];
-        return false
+        return false;
+    }
 
 }
 
