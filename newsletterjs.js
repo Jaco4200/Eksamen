@@ -16,5 +16,12 @@ function validation(){
         return false;
     }
 
+
+    else{
+     alert("Tak - din mail er blevet sendt. Tjek din mail for yderligere info")
+    }
 }
 
+for(let i=0; i<5; i++){
+    if (i% 2 !==0) console.log('msgV')
+}
