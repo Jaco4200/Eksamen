@@ -1,8 +1,15 @@
-.wrapper1{
+form{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    padding: 30px;
+    background-color: #F5EACF;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px #FCC133 ;
+}
+
+body{
+    background-color: red;
 }
