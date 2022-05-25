@@ -23,4 +23,9 @@ input{
 input[type=submit]{
     align-self: center;
     background: #3DCD58;
+    border: none;
+    border-radius: 20px;
+    width: 40%;
+    color: white;
+    cursor: pointer;
 }
