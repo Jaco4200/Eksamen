@@ -132,3 +132,12 @@ header{
     background-repeat: no-repeat; 
     height: 500px; 
 }
+
+.div4 { grid-area: 2 / 2 / 3 / 3;
+    height: 500px;
+    display: flex;
+    margin-right: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
