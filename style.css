@@ -115,4 +115,11 @@ header{
 }
 
 .div2 { grid-area: 1 / 2 / 2 / 3;
+    background-image: url(pictures/ilu1.png);
+    background-size: contain;
+    margin-right: 10%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 500px;
+    margin-bottom: 150px;
 }
