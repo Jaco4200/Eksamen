@@ -106,5 +106,10 @@ header{
 }
 
 .div1 { grid-area: 1 / 1 / 2 / 2;
-    
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
 }
