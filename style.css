@@ -21,3 +21,12 @@ a{
 header{
     margin-bottom: 150px;
 }
+
+.parenthead {
+    display: grid;
+    background-color: #EAEAE0;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 80px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
