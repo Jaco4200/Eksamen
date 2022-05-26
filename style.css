@@ -77,3 +77,18 @@ header{
         transition: 0.4s;
         text-decoration: none;
 }
+
+.search-txt{
+    border: none;
+    background: ghostwhite;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;   
+    line-height: 40px;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    width: 0px;
+   }
