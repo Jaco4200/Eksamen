@@ -61,3 +61,6 @@ header{
         top: 50px;
         border: 1px #626469;
     }
+    .search-box:hover > .search-btn{
+        background: #626469;
+          }
