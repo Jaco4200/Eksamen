@@ -9,3 +9,89 @@ header{
 body{
     background-color: #EAEAE0;
 }
+
+a{
+    color: #3DCD58;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 550;    
+}
+
+header{
+    margin-bottom: 150px;
+}
+
+.parenthead {
+    display: grid;
+    background-color: #EAEAE0;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 80px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    .divhead1 { grid-area: 1 / 1 / 2 / 2; 
+        background-image: url(pictures/lklogo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;}
+        .divhead2 { grid-area: 1 / 2 / 2 / 3;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 17%;
+            margin-right: 17%;
+            align-items: center;
+ }
+
+    .divhead3 { grid-area: 1 / 3 / 2 / 4; }
+
+    .search-box{
+        position: absolute;
+        top: 1%;
+        right: 1%;
+        transform: translate(4%,0%);
+        background: none;
+        height: 40px;
+        border-radius: 40px;
+        padding: 10px;
+ }
+
+     .search-box:hover > .search-txt{
+        width: 240px;
+        padding: 0 6px;
+        top: 50px;
+        border: 1px #626469;
+ }
+
+    .search-box:hover > .search-btn{
+        background: #626469;
+ }
+
+    .search-btn{
+        color: #EAEAE0;
+        float: right;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #3DCD58;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        text-decoration: none;
+}
+
+.search-txt{
+    border: none;
+    background: ghostwhite;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;   
+    line-height: 40px;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    width: 0px;
+}
