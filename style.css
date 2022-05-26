@@ -30,3 +30,15 @@ header{
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
+    .divhead1 { grid-area: 1 / 1 / 2 / 2; 
+        background-image: url(pictures/lklogo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;}
+        .divhead2 { grid-area: 1 / 2 / 2 / 3;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 17%;
+            margin-right: 17%;
+            align-items: center;
+             }
