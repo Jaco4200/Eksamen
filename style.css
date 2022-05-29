@@ -154,4 +154,10 @@ header{
     background-color: #3DCD58;
     border: none;
     color: white;
+    padding: 15px 32px;
+    border-radius: 15%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
