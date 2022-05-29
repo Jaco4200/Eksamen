@@ -18,4 +18,5 @@ window.onscroll = ()=>{
   this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
 
-const opn = document.getElementById("button");
+const open = document.getElementById("button");
+const modal_container = document.getElementById("modal_container");
