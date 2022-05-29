@@ -169,6 +169,15 @@ header{
         height: 500px; 
 }
 
+.div8 { grid-area: 4 / 2 / 5 / 3;
+    height: 500px;
+    display: flex;
+    margin-right: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .tekstdiv{
     width: 60%;
     margin-top: 40px;
