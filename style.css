@@ -148,3 +148,10 @@ header{
     height: 200px;
     background-color: #3DCD58;
 }
+
+#button {
+    margin-top: 20px;
+    background-color: #3DCD58;
+    border: none;
+    color: white;
+}
