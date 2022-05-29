@@ -21,3 +21,7 @@ window.onscroll = ()=>{
 const open = document.getElementById("button");
 const modal_container = document.getElementById("modal_container");
 const close = document.getElementById("close");
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
