@@ -160,7 +160,14 @@ header{
     height: 500px; 
 }
 
-
+.div7 { grid-area: 4 / 1 / 5 / 2;
+    background-image: url(pictures/ilu4.png);
+        background-size: contain;
+        margin-left: 10%;
+        background-position: center;
+        background-repeat: no-repeat; 
+        height: 500px; 
+}
 
 .tekstdiv{
     width: 60%;
