@@ -162,8 +162,6 @@ header{
     font-size: 16px;
 }
 
-.pnis{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 520;
-    font-size: 20px;
+.body{
+    background: red;
 }
