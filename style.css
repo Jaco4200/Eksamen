@@ -151,6 +151,17 @@ header{
     align-items: center;
 }
 
+.div6 { grid-area: 3 / 2 / 4 / 3; 
+    background-image: url(pictures/ilu3.png);
+    background-size: contain;
+    margin-right: 10%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 500px; 
+}
+
+
+
 .tekstdiv{
     width: 60%;
     margin-top: 40px;
