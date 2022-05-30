@@ -91,7 +91,6 @@ close2.addEventListener('click', () => {
 open3.addEventListener('click', () => {
   modal_container3.classList.add('show');
 })
-
 close3.addEventListener('click', () => {
   modal_container3.classList.remove('show');
 })
