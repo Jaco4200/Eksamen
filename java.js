@@ -38,7 +38,7 @@ checkBtn.addEventListener("click", e =>{
   let inputVal = inputField.value.split('').join(' ');
   if(inputVal == captcha.innerText){ 
     statusTxt.style.color = "#3DCD58";
-    statusTxt.innerText = "Nice! You don't appear to be a robot.";
+    statusTxt.innerText = "Fedt! du er ikke en robot.";
     setTimeout(()=>{
       nyhed.classList.add('show') 
       removeContent();
@@ -153,7 +153,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
 function validation(){
   var nameV = document.getElementById('navn').value;
   var mailV = document.getElementById('email').value;
@@ -172,7 +171,7 @@ function validation(){
       return false;
   }
   else{
-   alert("Tak - din mail er blevet sendt. Tjek din mail for yderligere info")
+   alert("Tak - din mail er blevet sendt. Tjek din mail for yderligere info");
   }
 }
 
