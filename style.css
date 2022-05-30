@@ -861,8 +861,7 @@ input[type=submit]{
       margin-bottom: 10px;
     }
     .divfoot3 { grid-area: 1 / 3 / 2 / 4;
-      display: flex; 
-      image-resolution: 30px;}
+      display: flex; }
     .pp{
       display: flex;
       flex-direction: column;
@@ -947,7 +946,7 @@ input[type=submit]{
     grid-template-columns: 1fr;
     justify-content: center;
     grid-template-rows: repeat(2, 1fr);
-    height: 650x;
+    height: 650px;
     }
     #close1{
       margin-top: 100px;
