@@ -254,6 +254,7 @@ header{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
 }
 .pnis{
     font-family: Arial, Helvetica, sans-serif;
@@ -304,6 +305,7 @@ header{
 
 #close{
     margin-top: 30px;
+    cursor: pointer;
     background-color: #3DCD58;
     border: none;
     color: white;
@@ -358,7 +360,8 @@ header{
   border-radius: 5px;
 }
 #close1{
-    margin-top: 40px;
+    margin-top: 60px;
+    cursor: pointer;
     background-color: #3DCD58;
     border: none;
     color: white;
@@ -414,6 +417,7 @@ header{
 }
 #close2{
     margin-top: 20px;
+    cursor: pointer;
     background-color: #3DCD58;
     border: none;
     color: white;
@@ -481,6 +485,7 @@ header{
 }
 #close3{
     margin-top: 20px;
+    cursor: pointer;
     background-color: #3DCD58;
     border: none;
     color: white;
@@ -524,6 +529,7 @@ header{
 }
 #close4{
   margin-top: 20px;
+  cursor: pointer;
   background-color: #3DCD58;
   border: none;
   color: white;
@@ -639,7 +645,7 @@ input[type=submit]{
     
     margin-top: 100px;
     margin-right: 50%;
-    margin-left: 30%;
+    margin-left: 35%;
     margin-bottom: 100px;
     max-width: 485px;
     width: 100%;
@@ -708,7 +714,7 @@ input[type=submit]{
     margin: auto;
     max-width: 750px;
     max-height: 750px;
-    background-image: url(pictures/greennhus.png);
+    background-image: url(pictures/skruemand.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -722,7 +728,7 @@ input[type=submit]{
     margin: auto;
     max-width: 750px;
     max-height: 750px;
-    background-image: url(pictures/greennhus.png);
+    background-image: url(pictures/hejhus.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -873,41 +879,6 @@ input[type=submit]{
       height: 40px;
       margin-left: 20px;
     }
-  @media (max-width: 506px){
-    body{
-      padding: 0 10px;
-    }
-    .wrapper{
-      padding: 22px 25px 35px;
-    }
-    .wrapper header{
-      font-size: 25px;
-    }
-    .wrapper .captcha-area{
-      height: 60px;
-    }
-    .captcha-area .captcha{
-      font-size: 28px;
-      letter-spacing: 5px;
-    }
-    .captcha-area .reload-btn{
-      width: 60px;
-      margin-left: 5px;
-      font-size: 20px;
-    }
-    .wrapper .input-area{
-      height: 55px;
-    }
-    .input-area .check-btn{
-      height: 40px;
-    }
-    .wrapper .status-text{
-      font-size: 15px;
-    }
-    .captcha-area .captcha-img{
-      width: 250px;
-    }
-  }
 @media screen and (max-width: 800px) {
     .mySlides{
           display: flex;
@@ -915,8 +886,8 @@ input[type=submit]{
           justify-content: center;
     }
     .slideshowboks{
-          width: 580px;
-          height: 500px;
+          width: 100%;
+          height: 100%;
     }
     .topnav{
         margin-top: 10px;
@@ -969,13 +940,45 @@ input[type=submit]{
     grid-template-columns: 1fr;
     justify-content: center;
     grid-template-rows: repeat(2, 1fr);
+    height: 650x;
     }
+    #close1{
+      margin-top: 100px;
+    }
+    #close2{
+      margin-top: 50px;
+  }
+  #close4{
+    margin-top: 50px;
+}
+  
+    .modal1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      grid-template-rows: repeat(2, 1fr);
+      }
+    .modal2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      grid-template-rows: repeat(2, 1fr);
+      }
+    .modal3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      grid-template-rows: repeat(2, 1fr);
+      }
+    .modal4 {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      grid-template-rows: repeat(2, 1fr);
+      }
     .parent {
             display: inline-block;
         }
-    .slideshowboks{
-        contain: content;
-    }
     .parenthead {
         grid-template-columns: 40% 0% 60%;
     }
@@ -1002,11 +1005,18 @@ input[type=submit]{
     }
     .div8{
         margin-right: 0%;
+    }
+    .div9{
+        margin-left: 0%;
+    }
+    .div10{
+        margin-right: 0%;
+        margin-bottom: 50px;
 }
 .wrapper{
   padding: 22px 25px 35px;
   margin-right: 30%;
-  margin-left: 15%;
+  margin-left: 10%;
 }
 .wrapper header{
   font-size: 25px;
