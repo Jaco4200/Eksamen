@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="da">
+ <head>
+    <meta charset="UTF-8">
+    <script src="java.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleGuide</title>
+    <link rel="stylesheet" href="stilesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" href="/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+  </head>
+
+   <body>
+    <div class="header">
+      <img class="logo" src="billeder/download.png" alt="logo">
+      <h2>Gruppe 23: Styleguide</h2>
+     <img class="logo" src="billeder/se-logo.png" alt="logo">
+     </div>
+
+      <div class="parent">
+        <div class="div1">
+          <a href="buttons.html">Buttons</a>
+          
+          <a href="color.html">Colors</a>
+          <a href="forms.html">Fonts</a>
+          <a href="modal.html">Modal</a>
+          <a href="search.html">Search</a>
+          <a class="active" href="Captcha.html">Captcha</a>
+          </div>
+        <div class="div2">
+            <div class="wrapper"><h3>Fuldfør captcha for at tilmelde dig nyhedsbrev</h3>
+              <div class="captcha-area">
+                <div class="captcha-img">
+                  <img src="billeder/captcha-bg.png" alt="Captch Background">
+                  <span class="captcha">H e S t 6 9</span>
+                </div>
+                <button5 class="reload-btn"><i class="fas fa-redo-alt"></i></button5>
+              </div>
+              <form action="#" class="input-area">
+                <input type="text" placeholder="Skriv captcha" maxlength="6" spellcheck="false" required>
+                <button5 class="check-btn">Check</button5>
+              </form>
+              <div class="status-text"></div>
+            </div>
+            <div class="infoboks"><p>Captcha bliver brugt for at for bekræftet menneskelig adfærd inden man kan tilmelde sig nyhedsbrevet.</p></div>
+            <p><b>Kode CSS</b><br>
+              .wrapper header{<br>
+                color: #4db2ec;<br>
+                font-size: 33px;<br>
+                font-weight: 500;<br>
+                text-align: center;<br>
+              }<br>
+              .wrapper .captcha-area{<br>
+                display: flex;<br>
+                font-family: "Poppins", sans-serif;<br>
+                height: 65px;<br>
+                margin: 30px 0 20px;<br>
+                align-items: center;<br>
+                justify-content: space-between;<br>
+              }<br>
+              .captcha-area .captcha-img{<br>
+                height: 100%;<br>
+                width: 345px;<br>
+                user-select: none;<br>
+                background: #000;<br>
+                border-radius: 5px;<br>
+                position: relative;<br>
+              }<br>
+              .captcha-img img{<br>
+                width: 100%;<br>
+                height: 100%;<br>
+                object-fit: cover;<br>
+                border-radius: 5px;<br>
+                opacity: 0.95;<br>
+              }<br>
+              .captcha-img .captcha{<br>
+                position: absolute;<br>
+                left: 50%;<br>
+                top: 50%;<br>
+                width: 100%;<br>
+                color: #fff;<br>
+                font-size: 35px;<br>
+                text-align: center;<br>
+                letter-spacing: 10px;<br>
+                transform: translate(-50%, -50%);<br>
+                text-shadow: 0px 0px 2px #b1b1b1;<br>
+                font-family: 'Noto Serif', serif;<br>
+              }<br>
+              .wrapper button5{<br>
+                outline: none;<br>
+                display: flex;<br>
+                align-items: center;<br>
+                justify-content: center;<br>
+                border: none;<br>
+                color: #fff;<br>
+                cursor: pointer;<br>
+                background: #3DCD58;<br>
+                border-radius: 5px;<br>
+                transition: all 0.3s ease;<br>
+              }<br>
+              .wrapper button5:hover{<br>
+                background: #626469;<br>
+              }<br>
+              .captcha-area .reload-btn{<br>
+                width: 75px;<br>
+                height: 100%;<br>
+                font-size: 25px;<br>
+              }<br>
+              .captcha-area .reload-btn i{<br>
+                transition: transform 0.3s ease;<br>
+              }<br>
+              .captcha-area .reload-btn:hover i{<br>
+                transform: rotate(15deg);<br>
+              }<br>
+              .wrapper .input-area{<br>
+                width: 100%;<br>
+                position: relative;<br>
+              }<br>
+              .input-area input{<br>
+                width: 100%;<br>
+                height: 100%;<br>
+                outline: none;<br>
+                padding-left: 20px;<br>
+                font-size: 20px;<br>
+                border-radius: 5px;<br>
+                border: 1px solid #bfbfbf;<br>
+              }<br>
+              .input-area input:is(:focus, :valid){<br>
+                padding-left: 19px;<br>
+                border: 2px solid #3DCD58;<br>
+              }<br>
+              .input-area input::placeholder{<br>
+                color: #bfbfbf;<br>
+              }<br>
+              .input-area .check-btn{<br>
+                position: absolute;<br>
+                right: 7px;<br>
+                top: 50%;<br>
+                font-size: 17px;<br>
+                height: 43px;<br>
+                padding: 0 20px;<br>
+                opacity: 0;<br>
+                pointer-events: none;<br>
+                transform: translateY(-50%);<br>
+              }<br>
+              .input-area input:valid + .check-btn{<br>
+                opacity: 1;<br>
+                pointer-events: auto;<br>
+              }<br>
+              .wrapper .status-text{<br>
+                display: none;<br>
+                font-size: 18px;<br>
+                text-align: center;<br>
+                margin: 20px 0 -5px;<br>
+              }</p>
+      </div>
+        <div class="div3">
+          <p class="css">
+            <b> Kode Javascript </b> <br><br>
+            const captcha = document.querySelector(".captcha"); <br>
+            const wrap = document.querySelector(".wrapper"); <br>
+            reloadBtn = document.querySelector(".reload-btn"),<br>
+            inputField = document.querySelector(".input-area input"),<br>
+            checkBtn = document.querySelector(".check-btn"),<br>
+            statusTxt = document.querySelector(".status-text");<br>
+            
+            let allCharacters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',<br>
+                                 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd',<br>
+                                 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',<br>
+                                 't', 'u', 'v', 'w', 'x', 'y', 'z', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];<br>
+            
+            function getCaptcha(){<br>
+              for (let i = 0; i < 6; i++) { <br>
+                let randomCharacter = allCharacters[Math.floor(Math.random() * allCharacters.length)];<br>
+                captcha.innerText += ` ${randomCharacter}`; <br>
+              }<br>
+            }<br>
+            getCaptcha(); <br>
+            reloadBtn.addEventListener("click", ()=>{<br>
+              removeContent();<br>
+              getCaptcha();<br>
+            });<br>
+            checkBtn.addEventListener("click", e =>{<br>
+              e.preventDefault(); <br>
+              statusTxt.style.display = "block";<br>
+              
+              let inputVal = inputField.value.split('').join(' ');<br>
+              if(inputVal == captcha.innerText){ <br>
+                statusTxt.style.color = "#3DCD58";<br>
+                statusTxt.innerText = "Fedt! du er ikke en robot.";<br>
+                setTimeout(()=>{<br>
+                  removeContent();<br>
+                  wrap.remove();<br>
+                }, 2000);<br>
+              }else{<br>
+                statusTxt.style.color = "#ff0000";<br>
+                statusTxt.innerText = "Captcha matcher ikke, prøv igen!";<br>
+              }<br>
+            });<br>
+            function removeContent(){<br>
+             inputField.value = "";<br>
+             captcha.innerText = "";<br>
+             statusTxt.style.display = "none";<br>
+            }<br>
+            </p>
+         </div>
+         </div>
+         <div class="bund">
+            <img src="billeder/UCL_horisontal_logo_rbg.png" alt="UCL Logo">
+            <p>&copy; Projekt 4 2022</p>
+          </div>
+
+  </body>
+</html>

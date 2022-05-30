@@ -36,7 +36,7 @@ h1{
   margin-left: 3px;
   margin-right: 3px;
   font-size: 1.5em;
-  color: #E47F00;
+  color: #020201;
 }
 body{
     min-height: 100vh;
@@ -49,7 +49,7 @@ body{
   background-position: center;
   background-size: contain;
   width: 100%;
-  height:100px;
+  height:150px;
 }
 a{
     color: #3DCD58;

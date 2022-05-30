@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="da">
+ <head>
+    <meta charset="UTF-8">
+    <script src="java.js" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleGuide</title>
+    <link rel="stylesheet" href="stilesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" href="/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+  </head>
+
+   <body>
+    <div class="header">
+      <img class="logo" src="billeder/download.png" alt="logo">
+      <h2>Gruppe 23: Styleguide</h2>
+     <img class="logo" src="billeder/se-logo.png" alt="logo">
+     </div>
+
+      <div class="parent">
+        <div class="div1">
+          <a href="buttons.html">Buttons</a>
+          
+          <a href="color.html">Colors</a>
+          <a href="forms.html">Fonts</a>
+          <a class="active" href="modal.html">Modal</a>
+          <a href="search.html">Search</a>
+          <a href="Captcha.html">Captcha</a>
+          </div>
+        <div class="div2">
+          <div class="divcontain">
+            <a href="#"><button id="button"><p class="pnis">Læs Mere</p></button></a>
+            </div>
+            <div class="infoboks"><p>Modal bliver brugt til overlay af hjemmesiden for at vise ydeligere information.</p></div>
+
+      <div id="modal_container">
+        <div class="modal">
+        
+          <div class="fff"><h1>Åh nej! Elpriserne stiger</h1>
+              <div class="space">
+            <p>Det er et faktum at stigende elpriser for os danskere desværre er en realitet, 
+              dette skyldes de massive forandringer vi har været igennem med pandemien og dem vi går igennem i 
+              øjeblikket med inflation og krig. <br><br>
+              </p></div>
+              <button id="close">Tilbage</button>
+            </div>
+        </div>
+      </div>
+      <p><b> Kode CSS </b><br><br>
+      
+        #button{<br>
+          margin-top: 20px;<br>
+          background-color: #3DCD58;<br>
+          border: none;<br>
+          color: white;<br>
+          padding: 15px 32px;<br>
+          border-radius: 15%;<br>
+          text-align: center;<br>
+          text-decoration: none;<br>
+          display: inline-block;<br>
+          font-size: 16px;<br>
+          cursor: pointer;<br>
+          }<br>
+          #close{<br>
+            margin-top: 30px;<br>
+            cursor: pointer;<br>
+            background-color: #3DCD58;<br>
+            border: none;<br>
+            color: white;<br>
+            padding: 15px 32px;<br>
+            border-radius: 15%;<br>
+            text-align: center;<br>
+            text-decoration: none;<br>
+            display: inline-block;<br>
+            font-size: 16px;<br>
+        }<br>
+        .modal{<br>
+          display: grid;<br>
+          padding: 6px;<br>
+          grid-template-columns: repeat(2, 1fr);<br>
+          grid-template-rows: 1fr;<br>
+          justify-content: space-between;<br>
+          align-items: center;<br>
+          height: 80%;<br>
+          width: 80%;<br>
+          background-color: #ffffff;<br>
+          border-radius: 5px;<br>
+      }<br>
+      #modal_container{<br>
+        position: fixed;<br>
+        z-index: 2;<br>
+        display: flex;<br>
+        justify-content: center;<br>
+        align-items: center;<br>
+        pointer-events: none;<br>
+        opacity: 0;<br>
+        top: 0;<br>
+        left: 0;<br>
+        height: 100vh;<br>
+        width: 100%;<br>
+        transition: opacity 0.3s ease;<br>
+      }<br>
+      #modal_container.show{<br>
+        pointer-events: auto;<br>
+        opacity: 1;<br>
+      }</p>
+      </div>
+        <div class="div3">
+          <p class="css">
+            <b> Kode javascript </b> <br><br>
+            const open = document.getElementById("button");<br>
+            const modal_container = document.getElementById("modal_container");<br>
+            const close = document.getElementById("close");<br>
+            
+            open.addEventListener('click', () => {<br>
+              modal_container.classList.add('show');<br>
+            })<br>
+            close.addEventListener('click', () => {<br>
+              modal_container.classList.remove('show');<br>
+            })<br>
+            $("button").click(function() {<br>
+              $('html,body').animate({<br>
+                  scrollTop: $(".div2").offset().top},<br>
+                  'fast');<br>
+            });<br>
+            </p>
+         </div>
+         </div>
+         <div class="bund">
+            <img src="billeder/UCL_horisontal_logo_rbg.png" alt="UCL Logo">
+            <p>&copy; Projekt 4 2022</p>
+          </div>
+
+  </body>
+</html>

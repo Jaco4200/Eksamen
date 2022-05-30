@@ -21,9 +21,9 @@ let allCharacters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
                      't', 'u', 'v', 'w', 'x', 'y', 'z', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function getCaptcha(){
-  for (let i = 0; i < 6; i++) { //getting 6 random characters from the array
+  for (let i = 0; i < 6; i++) { 
     let randomCharacter = allCharacters[Math.floor(Math.random() * allCharacters.length)];
-    captcha.innerText += ` ${randomCharacter}`; //passing 6 random characters inside captcha innerText
+    captcha.innerText += ` ${randomCharacter}`;
   }
 }
 getCaptcha(); 
@@ -31,8 +31,7 @@ reloadBtn.addEventListener("click", ()=>{
   removeContent();
   getCaptcha();
 });
-checkBtn.addEventListener("click", e =>{
-  e.preventDefault(); 
+checkBtn.addEventListener("click", e =>{ 
   statusTxt.style.display = "block";
   
   let inputVal = inputField.value.split('').join(' ');
@@ -151,7 +150,6 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }
 function validation(){
   var nameV = document.getElementById('navn').value;
@@ -180,4 +178,9 @@ for(let i=0; i<5; i++){
 }
 function confirm_alert(node) {
   return confirm("Dette link sender dig til wisers hovedside og forlader denne, er du sikker på du vil videre?");
+}
+const arrayss = [1, 2, 3, 4, 5, 6, 7];
+
+for (let i = 1; i <= arrayss.length; i++) {
+    console.log(`I love JavaScript.`);
 }

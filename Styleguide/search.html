@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="da">
+ <head>
+    <meta charset="UTF-8">
+    <script src="index.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleGuide</title>
+    <link rel="stylesheet" href="stilesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" href="/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+  </head>
+
+   <body>
+    <div class="header">
+      <img class="logo" src="billeder/download.png" alt="logo">
+      <h2>Gruppe 23: Styleguide</h2>
+     <img class="logo" src="billeder/se-logo.png" alt="logo">
+     </div>
+
+      <div class="parent">
+        <div class="div1">
+          <a href="buttons.html">Buttons</a>
+          
+          <a href="color.html">Colors</a>
+          <a href="forms.html">Fonts</a>
+          <a href="modal.html">Modal</a>
+          <a class="active" href="search.html">Search</a>
+          <a href="Captcha.html">Captcha</a>
+          </div>
+        <div class="div2">
+          <div class="divcontain">
+            <div class="search-box">
+              <input class="search-txt" type="text" name="" placeholder="Type to search">
+                  <a class="search-btn" href="#">
+                      <i class="fas fa-search"></i>
+                  </a>
+              </div>
+            </div>
+            <div class="infoboks"><p>Search modulet er midlertidig placeholder for fremtidig udvikling.</p></div>
+      </div>
+        <div class="div3">
+          <p class="css">
+            <b> Kode CSS </b> <br>
+            .search-box{ <br>
+              position: absolute;<br>
+              top: 22%;<br>
+              right: 40%;<br>
+              transform: translate(4%,0%);<br>
+              background: none;<br>
+              height: 40px;<br>
+              border-radius: 40px;<br>
+              padding: 10px;<br>
+            }<br>
+            .search-box:hover > .search-txt{<br>
+              width: 240px;<br>
+              padding: 0 6px;<br>
+              top: 50px;<br>
+              border: 1px #626469;<br>
+            }<br>
+            .search-box:hover > .search-btn{<br>
+              background: #626469;<br>
+            }<br>
+            .search-btn{<br>
+              color: #EAEAE0;<br>
+              float: right;<br>
+              width: 40px;<br>
+              height: 40px;<br>
+              border-radius: 50%;<br>
+              background: #3DCD58;<br>
+              display: flex;<br>
+              justify-content: center;<br>
+              align-items: center;<br>
+              transition: 0.4s;<br>
+              text-decoration: none;<br>
+            }<br>
+            
+            .search-txt{<br>
+            border: none;<br>
+            background: ghostwhite;<br>
+            outline: none;<br>
+            float: left;<br>
+            padding: 0;<br>
+            color: #3DCD58;<br>
+            font-size: 16px;<br>
+            transition: 0.4s;   <br>
+            line-height: 40px;<br>
+            border-top-left-radius: 10%;<br>
+            border-bottom-left-radius: 10%;<br>
+            width: 0px;<br>
+            }
+            </p>
+         </div>
+         </div>
+         <div class="bund">
+            <img src="billeder/UCL_horisontal_logo_rbg.png" alt="UCL Logo">
+            <p>&copy; Projekt 4 2022</p>
+          </div>
+
+  </body>
+</html>
