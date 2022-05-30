@@ -7,6 +7,15 @@
 h1, h2, p {
     font-family: Arial, Helvetica, sans-serif;
 }
+h1{
+  color:#3DCD58
+}
+.pp{
+  margin-top: 2%;
+  margin-left: 2%;
+  color: #3DCD58;
+  font-size: 16px;
+}
 body{
     min-height: 100vh;
     background-color: #EAEAE0;
@@ -35,6 +44,7 @@ header{
     grid-row-gap: 0px;
     }
     .divhead1 { grid-area: 1 / 1 / 2 / 2; 
+        margin-left: 3%;
         background-image: url(pictures/lklogo.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -100,7 +110,7 @@ header{
     background-color: #EAEAE0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -125,7 +135,7 @@ header{
 }
 
 .div3 { grid-area: 2 / 1 / 3 / 2;
-    background-image: url(pictures/ilu2.png);
+    background-image: url(pictures/ilu5.png);
     background-size: contain;
     margin-left: 10%;
     background-position: center;
@@ -152,7 +162,7 @@ header{
 }
 
 .div6 { grid-area: 3 / 2 / 4 / 3; 
-    background-image: url(pictures/ilu3.png);
+    background-image: url(pictures/ilu2.png);
     background-size: contain;
     margin-right: 10%;
     background-position: center;
@@ -161,7 +171,7 @@ header{
 }
 
 .div7 { grid-area: 4 / 1 / 5 / 2;
-    background-image: url(pictures/ilu4.png);
+    background-image: url(pictures/ilu3.png);
         background-size: contain;
         margin-left: 10%;
         background-position: center;
@@ -177,12 +187,29 @@ header{
     justify-content: center;
     align-items: center;
 }
-
+.div9 { grid-area: 5 / 1 / 6 / 2;
+    height: 500px;
+    display: flex;
+    margin-left: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div10 {grid-area: 5 / 2 / 6 / 3;
+  background-image: url(pictures/ilu4.png);
+  background-size: contain;
+  margin-right: 10%;
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: 500px; 
+}
 .tekstdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 60%;
     margin-top: 40px;
     height: 200px;
-    background-color: #3DCD58;
 }
 
 #button {
@@ -376,6 +403,18 @@ header{
     display: inline-block;
     font-size: 16px;
 }
+#button4 {
+  margin-top: 20px;
+  background-color: #3DCD58;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 15%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 #modal_container3{
     position: fixed;
     display: flex;
@@ -417,6 +456,48 @@ header{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+#modal_container4{
+  position: fixed;
+  display: flex;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+#modal_container4.show{
+  pointer-events: auto;
+  opacity: 1;
+
+}
+.modal4{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(1, 3, 4, 0.5)
+}
+#close4{
+  margin-top: 20px;
+  background-color: #3DCD58;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 15%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 img {
     width: 90%;
@@ -510,7 +591,7 @@ input[type=submit]{
 }
 ::selection{
     color: #fff;
-    background: #4db2ec;
+    background: #3DCD58;
   }
 
   .wrapper{
@@ -575,12 +656,12 @@ input[type=submit]{
     border: none;
     color: #fff;
     cursor: pointer;
-    background: #4db2ec;
+    background: #3DCD58;
     border-radius: 5px;
     transition: all 0.3s ease;
   }
   .wrapper button5:hover{
-    background: #2fa5e9;
+    background: #626469;
   }
   .captcha-area .reload-btn{
     width: 75px;
@@ -608,7 +689,7 @@ input[type=submit]{
   }
   .input-area input:is(:focus, :valid){
     padding-left: 19px;
-    border: 2px solid #4db2ec;
+    border: 2px solid #3DCD58;
   }
   .input-area input::placeholder{
     color: #bfbfbf;
@@ -634,7 +715,23 @@ input[type=submit]{
     text-align: center;
     margin: 20px 0 -5px;
   }
-  
+  .parentfoot {
+    display: grid;
+    grid-template-columns: 15% 65% 20%;
+    grid-template-rows: 40px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .divfoot1 { grid-area: 1 / 1 / 2 / 2;
+      margin-left: 3%;
+      background-image: url(pictures/se-logo.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    .divfoot2 { grid-area: 1 / 2 / 2 / 3; }
+    .divfoot3 { grid-area: 1 / 3 / 2 / 4; }
   @media (max-width: 506px){
     body{
       padding: 0 10px;

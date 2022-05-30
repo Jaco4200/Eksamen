@@ -37,16 +37,16 @@ checkBtn.addEventListener("click", e =>{
   
   let inputVal = inputField.value.split('').join(' ');
   if(inputVal == captcha.innerText){ 
-    statusTxt.style.color = "#4db2ec";
+    statusTxt.style.color = "#3DCD58";
     statusTxt.innerText = "Nice! You don't appear to be a robot.";
-    nyhed.classList.add('show')
-    setTimeout(()=>{ 
+    setTimeout(()=>{
+      nyhed.classList.add('show') 
       removeContent();
       wrap.remove();
     }, 2000);
   }else{
     statusTxt.style.color = "#ff0000";
-    statusTxt.innerText = "Captcha not matched. Please try again!";
+    statusTxt.innerText = "Captcha matcher ikke, prøv igen!";
   }
 });
 function removeContent(){
@@ -66,6 +66,9 @@ const close2 = document.getElementById("close2");
 const open3 = document.getElementById("button3");
 const modal_container3 = document.getElementById("modal_container3");
 const close3 = document.getElementById("close3");
+const open4 = document.getElementById("button4");
+const modal_container4 = document.getElementById("modal_container4");
+const close4 = document.getElementById("close4");
 
 open.addEventListener('click', () => {
   modal_container.classList.add('show');
@@ -93,6 +96,13 @@ open3.addEventListener('click', () => {
 close3.addEventListener('click', () => {
   modal_container3.classList.remove('show');
 })
+open4.addEventListener('click', () => {
+  modal_container4.classList.add('show');
+})
+
+close4.addEventListener('click', () => {
+  modal_container4.classList.remove('show');
+})
 
 $("button").click(function() {
   $('html,body').animate({
@@ -112,6 +122,11 @@ $("button2").click(function() {
 $("button3").click(function() {
   $('html,body').animate({
       scrollTop: $(".div8").offset().top},
+      'fast');
+});
+$("button4").click(function() {
+  $('html,body').animate({
+      scrollTop: $(".div9").offset().top},
       'fast');
 });
 
@@ -164,4 +179,6 @@ function validation(){
 for(let i=0; i<5; i++){
   if (i% 2 !==0) console.log('msgV')
 }
-
+function confirm_alert(node) {
+  return confirm("Dette link sender dig til wisers hovedside og forlader denne, er du sikker på du vil videre?");
+}
