@@ -785,9 +785,6 @@ input[type=submit]{
   margin-left: 5px;
   font-size: 20px;
 }
-.wrapper .input-area{
-  height: 55px;
-}
 .input-area .check-btn{
   height: 40px;
 }
